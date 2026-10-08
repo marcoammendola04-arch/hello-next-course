@@ -1,0 +1,22 @@
+import type { NextPage } from 'next'
+import React from 'react';
+import Image from 'next/image';
+import head from 'next/head';
+import image from '/public/images/react.png';
+
+const Home: NextPage = () => {
+
+    return (
+        <>
+            <head>
+                <title>Front End Gadgets</title>
+                <meta name="description" content="Front end gadget is a demo site to learn Next"/>
+            </head>
+            <Image src={image} alt="React logo"/>
+            <h1 className="title">FrontEnd Gadgets</h1>
+            <button className="transition-all duration-500 border border-pink-500 bg-white rounded-lg rounded-circle p-2 h" />
+        </>
+    )
+}
+
+export default Home
